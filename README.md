@@ -23,7 +23,7 @@ pip install mosaic-stats
 
 ## Usage
 
-You can run the statistics generator:
+You can run the statistics generator and follow the prompts in the application.
 
 ```bash
 mosaic-stats [dir_for_lights]
