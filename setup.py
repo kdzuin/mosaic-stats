@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mosaic-stats',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
@@ -10,9 +10,8 @@ setup(
         ],
     },
     install_requires=[
-        'argparse',
         'astropy',
-        # Add other dependencies here
+        # Add other dependencies here if needed
     ],
     description='Statistics generation script for astrophotography mosaic projects',
     long_description=open('README.md').read(),
