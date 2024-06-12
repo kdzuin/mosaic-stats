@@ -1,4 +1,8 @@
+Lights/
 *.fit
 *.fits
 *.xisf
 .astrostats
+build/
+dist/
+
