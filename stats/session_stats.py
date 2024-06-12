@@ -2,7 +2,7 @@ import os
 from collections import defaultdict
 from datetime import timedelta
 import argparse
-import cache_handler
+from stats import cache_handler
 
 def generate_session_stats(root_dir, panels=None):
     if not cache_handler.is_cache_valid(root_dir):
