@@ -4,6 +4,8 @@ import importlib
 import os
 import sys
 import argparse
+from stats import astrophotography_stats, detailed_panel_stats, session_stats
+
 
 def display_menu():
     print("\nSelect an option:")
@@ -34,15 +36,12 @@ def main():
         choice = input("Enter your choice (1-4): ")
 
         if choice == '1':
-            import astrophotography_stats
             astrophotography_stats.main(root_dir=root_dir)
         elif choice == '2':
-            import detailed_panel_stats
             detailed_panel_stats.main(root_dir=root_dir)
         elif choice == '3':
             panels_input = input("Enter list of panels (separated by space, or leave empty for all panels): ")
             panels = panels_input.split() if panels_input else None
-            import session_stats
             session_stats.main(root_dir=root_dir, panels=panels)
         elif choice == '4':
             print("Exiting...")
